@@ -169,20 +169,6 @@
 			remoteGlobalIDString = F4DB7112640687A3204691772827D515;
 			remoteInfo = "Pods-W2STApp";
 		};
-		66C4914D1E5335E6008CB166 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66BC48D41DA7E3E400C196B1 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 77C828F9BCFA9FC0473077401AA3B54E;
-			remoteInfo = AWSCore;
-		};
-		66C4914F1E5335E6008CB166 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66BC48D41DA7E3E400C196B1 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D8C9D0A2B23C4BCA3259084B47FEE33D;
-			remoteInfo = AWSMobileAnalytics;
-		};
 		66CFCD551B9F264900B9A096 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66CFCD501B9F264900B9A096 /* BlueSTSDK.xcodeproj */;
@@ -704,8 +690,6 @@
 		66BC48D51DA7E3E400C196B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66C4914E1E5335E6008CB166 /* libAWSCore.a */,
-				66C491501E5335E6008CB166 /* libAWSMobileAnalytics.a */,
 				66BC48DD1DA7E3E500C196B1 /* libCorePlot.a */,
 				66BC48DF1DA7E3E500C196B1 /* libMQTTClient.a */,
 				66BC48E11DA7E3E500C196B1 /* libPods-W2STApp.a */,
@@ -996,12 +980,12 @@
 				TargetAttributes = {
 					66F375E01EB9C2AA005D16F7 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 9L4QA9SNQK;
+						DevelopmentTeam = 38VD6B9865;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA68CFA918D0CB75003B774E;
 					};
 					EA68CFA918D0CB75003B774E = {
-						DevelopmentTeam = 9L4QA9SNQK;
+						DevelopmentTeam = 38VD6B9865;
 						DevelopmentTeamName = "STMICROELECTRONICS, INC";
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
@@ -1010,7 +994,7 @@
 								enabled = 1;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1077,20 +1061,6 @@
 			fileType = archive.ar;
 			path = "libPods-W2STApp.a";
 			remoteRef = 66BC48E01DA7E3E500C196B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		66C4914E1E5335E6008CB166 /* libAWSCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAWSCore.a;
-			remoteRef = 66C4914D1E5335E6008CB166 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		66C491501E5335E6008CB166 /* libAWSMobileAnalytics.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAWSMobileAnalytics.a;
-			remoteRef = 66C4914F1E5335E6008CB166 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		66CFCD561B9F264900B9A096 /* BlueSTSDK.framework */ = {
@@ -1206,13 +1176,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-W2STApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1414,7 +1387,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				DEVELOPMENT_TEAM = 38VD6B9865;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "ST BlueMSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -1438,7 +1411,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				DEVELOPMENT_TEAM = 38VD6B9865;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				INFOPLIST_FILE = "ST BlueMSTests/Info.plist";
@@ -1563,11 +1536,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = "W2STApp/ST BlueMS.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				DEVELOPMENT_TEAM = 38VD6B9865;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1584,7 +1556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.st.clab.CloudTest;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dimakan.CloudTest;
 				PRODUCT_NAME = "ST BlueMS";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1606,11 +1578,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = "W2STApp/ST BlueMS.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				DEVELOPMENT_TEAM = 38VD6B9865;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1627,7 +1598,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.st.clab.CloudTest;
+				PRODUCT_BUNDLE_IDENTIFIER = me.dimakan.CloudTest;
 				PRODUCT_NAME = "ST BlueMS";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "W2STApp/MainApp/W2STApp-Bridging-Header.h";

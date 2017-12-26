@@ -5,7 +5,7 @@
 //  Created by Giovanni Visentini on 03/05/2017.
 //  Copyright © 2017 STMicroelectronics. All rights reserved.
 //
-
+/*
 import Foundation
 import XCTest
 @testable import ST_BlueMS
@@ -21,3 +21,5 @@ class BatteryInfoTest : XCTestCase {
     
     
 }
+
+*/
