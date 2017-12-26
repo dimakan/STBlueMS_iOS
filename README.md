@@ -22,6 +22,13 @@ git clone https://github.com/STMicroelectronics-CentralLabs/STBlueMS_iOS
 git submodule update --init --recursive
 ```
 
+###########################
+### To use CocoaPods:
+1. sudo gem install cocoapods
+2. pod install
+3. Open: W2STApp.xcworkspace
+###########################
+
 ## License
 
 Copyright (c) 2017  STMicroelectronics – All rights reserved
